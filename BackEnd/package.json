@@ -1,0 +1,24 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Cristiano Lages",
+  "license": "ISC",
+  "prisma": {
+    "seed": "node BackEnd/seed.js"
+  },
+  "dependencies": {
+    "@fastify/cors": "^8.1.1",
+    "@prisma/client": "^4.5.0",
+    "fastify": "^4.9.2"
+  },
+  "devDependencies": {
+    "prisma": "^4.5.0",
+    "prisma-erd-generator": "^1.2.2"
+  }
+}
