@@ -1,26 +1,27 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+html {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
+body {
+  font-family: sans-serif;
+  display: flex;
+  flex: 1;
+}
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+button,
+a {
+  text-decoration: none;
+  opacity: 1;
+  transition: 0.3s;
+}
+button,
+a:hover,
+:focus {
+  opacity: 0.5;
 }
