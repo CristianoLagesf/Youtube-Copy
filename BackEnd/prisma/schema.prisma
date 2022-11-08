@@ -34,3 +34,11 @@ model PlayList {
   user   User   @relation(fields: [userId], references: [id])
   userId String
 }
+
+model List {
+  id       String @id @default(cuid())
+  title    String
+  url      String
+  thumb    String
+  category String
+}

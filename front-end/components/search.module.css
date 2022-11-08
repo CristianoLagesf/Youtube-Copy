@@ -1,0 +1,32 @@
+.wrap {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid;
+  max-width: 425px;
+  width: 100%;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.text {
+  width: 80%;
+  padding: 4px 6px;
+  border: none;
+
+  outline: none;
+  background-color: #ffff;
+}
+.bt {
+  flex: 1;
+  cursor: pointer;
+  border: none;
+  background-color: #f0f0f0;
+  box-shadow: 0 1px 0 rgb(0 0 0 / 10%);
+  border-left: 1px solid #e5e5e5;
+  width: 40px;
+  height: 40px;
+  @media (min-width: 600px) {
+    width: 64px;
+    height: 40px;
+  }
+}

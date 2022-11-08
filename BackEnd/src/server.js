@@ -14,12 +14,18 @@ async function bootstrap() {
   await fastify.register(cors, {
     origin: true,
   })
+
   fastify.get("/users", async () => {
     const user = await prisma.user.findFirst({
       where: {
         name: 'Cristiano'
       }
     })
+    return { user }
+  })
+  fastify.get("/list", async () => {
+    const user = await prisma.List.count()
+
     return { user }
   })
   await fastify.listen({ port: 3333 })

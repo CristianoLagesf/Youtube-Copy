@@ -14,7 +14,7 @@ body {
   flex: 1;
 }
 
-button,
+/* button,
 a {
   text-decoration: none;
   opacity: 1;
@@ -24,4 +24,4 @@ button,
 a:hover,
 :focus {
   opacity: 0.5;
-}
+} */
