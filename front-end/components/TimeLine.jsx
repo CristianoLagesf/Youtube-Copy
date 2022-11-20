@@ -16,7 +16,7 @@ export default function TimeLine(props) {
         const videos = props.playlists[playListNames]
 
         return (
-          <div className={style.section}>
+          <div className={style.section} key={playListNames}>
             <h2 className={style.h2}>
               {playListNames}
             </h2>
@@ -29,7 +29,7 @@ export default function TimeLine(props) {
 
               }).map((videos) => {
                 return (
-                  <a className={style.a} href={videos.url}>
+                  <a key={videos.url} className={style.a} href={videos.url}>
                     <img className={style.img} src={videos.thumb} />
                     <span className={style.span}>{videos.title}</span>
                   </a>

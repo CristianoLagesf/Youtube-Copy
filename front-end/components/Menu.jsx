@@ -4,16 +4,13 @@ import Search from './Search'
 export default function Menu(props) {
 
   return (
-    <div className={props.filterValue ? styles.div : styles.divDarkMode}>
+    <div className={styles.div}>
       <div>
         <Logo />
       </div>
       <div className={styles.search}>
         <Search filterValue={props.filterValue} setfilterValue={props.setfilterValue} />
       </div>
-      <button onClick={() => { props.setDarkMode(!props.darkMode) }}>
-        darkMode
-      </button>
     </div>
   )
 }
